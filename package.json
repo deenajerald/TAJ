@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Conversational Interface For Booking Hotel",
   "main": "app.js",
-  "scripts": {
-  "start": "node app.js"
-  },
+  
   "dependencies": {
     "apiai": "^2.0.5",
     "body-parser": "^1.15.1",
@@ -14,14 +12,7 @@
     "express": "^4.13.4",
     "node-uuid": "^1.4.7"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VigneshwaranR-Hexaware/hotelbookingapp.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/VigneshwaranR-Hexaware/hotelbookingapp/issues"
-  },
-  "homepage": "https://github.com/VigneshwaranR-Hexaware/hotelbookingapp#readme"
+  "scripts": {
+  "start": "node app.js"
+  }
 }
