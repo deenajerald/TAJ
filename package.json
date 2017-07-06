@@ -14,5 +14,20 @@
   },
   "scripts": {
   "start": "node app.js"
+  },
+   
+    "author": "denaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deenajerald/TAJ/issues"
+  },
+  "homepage": "https://github.com/deenajerald/TAJ#readme",
+  "devDependencies": {},
+  "bin": {
+    "dena": "npm-cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deenajerald/TAJ.git"
   }
 }
