@@ -15,7 +15,7 @@ var options = {
     sessionId: '567yh8'
 };
 
-console.log('request of parent:'+ JSON.stringify(req.body.result.metadata.intentName));
+
    app.post('/',function(req,res){
 console.log("name "+req.body.result.metadata.intentName);
 console.log('request of parent:'+ JSON.stringify(req.body.result.metadata.intentName));
