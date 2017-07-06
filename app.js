@@ -29,9 +29,9 @@ console.log('request of parent:'+ JSON.stringify(req.body));
     speech:resagent,
     displayText: resagent,
     source:'booking'  });
- };
+ }
  
-}
+});
 
 
 
