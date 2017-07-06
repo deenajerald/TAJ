@@ -1,8 +1,7 @@
-
 'use strict';
 var apiai = require('apiai');
 
-var appai = apiai("5f690c52bd5548e989fe4db8a512dc84");
+var appai = apiai("807237fd5b044892a70b24fd31801bba");
 
 var express=require('express');
 var bodyParser = require('body-parser');
@@ -18,22 +17,21 @@ var options = {
 
    app.post('/',function(req,res){
 console.log("name "+req.body.result.metadata.intentName);
-console.log('request of parent:'+ JSON.stringify(req.body.result.metadata.intentName));
- if (req.body.result.metadata.intentName=='payment')
+console.log('request of parent:'+ JSON.stringify(req.body));
+ if (req.body.result.metadata.intentName=='parentIntentPhone')
  {
   var apiagentreq=req.body.result&&req.body.result.parameters;
-  var resagent=' Conform order for the payment';
-
+  var resagent=' Conform order for the phone';
+  
   console.log('request are'+ JSON.stringify(apiagentreq));
 
   return res.json({
     speech:resagent,
     displayText: resagent,
-    source:'hotelbooking'  });
+    source:'booking'  });
  }
-
-
-});
+ 
+}
 
 
 
