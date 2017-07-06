@@ -18,7 +18,7 @@ var options = {
    app.post('/',function(req,res){
 console.log("name "+req.body.result.metadata.intentName);
 console.log('request of parent:'+ JSON.stringify(req.body));
- if (req.body.result.metadata.intentName=='parentIntentPhone')
+ if (req.body.result.metadata.intentName=='payment')
  {
   var apiagentreq=req.body.result&&req.body.result.parameters;
   var resagent=' Conform order for the phone';
