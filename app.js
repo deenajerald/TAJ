@@ -14,8 +14,12 @@ var options = {
     sessionId: '567yh8'
 };
 
+app.get('/', function (req, res) {
+   console.log("Got a GET request for the homepage");
+   res.send('Hello GET');
+})
 
-   app.post('/',function(req,res){
+app.post('/',function(req,res){
 console.log("name "+req.body.result.metadata.intentName);
 console.log('request of parent:'+ JSON.stringify(req.body));
  if (req.body.result.metadata.intentName=='payment')
@@ -30,7 +34,7 @@ console.log('request of parent:'+ JSON.stringify(req.body));
     displayText: resagent,
     source:'booking'  });
  }
- 
+                                       
 });
 
 
